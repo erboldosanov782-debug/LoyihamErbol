@@ -1,0 +1,1750 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аната – Кухни</title>
+    <link rel="icon" href="../Images/Logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <base target="_blank" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- 1 - BOLIM -->
+    <div class="border-b border-gray-200">
+      <div
+        class="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4 py-3"
+      >
+        <a href="/" class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 rounded-full bg-[#e8d5c0] flex items-center justify-center"
+          >
+            <img src="../Images/Logo.svg" alt="Logo" />
+          </div>
+          <span class="text-[#b87641] text-xl">Аната </span>
+          <span class="text-lg">– Кухни</span>
+        </a>
+
+        <div class="flex items-center gap-8 max-[983px]:hidden">
+          <div class="text-sm text-gray-600 text-center">
+            Москва,<br />
+            Дмитровское шоссе, д 62 стр 5
+          </div>
+          <div class="text-sm text-center">
+            <div class="text-gray-900">+7 499 321-20-63</div>
+            <div>Заказать звонок</div>
+          </div>
+          <div class="text-sm text-center">
+            <div class="text-gray-900">9:00 - 20:00</div>
+            <div class="text-gray-500">ежедневно</div>
+          </div>
+          <button class="dark ml-3">
+            <img
+              src="/Images/light_mode_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"
+              class="sun"
+              alt=""
+            />
+            <img
+              src="/Images/dark_mode_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"
+              class="moon"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="hidden max-[983px]:inline-flex text-center">
+          <button
+            class="inline-flex items-center justify-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+          >
+            <img src="../Images/Menu.svg" alt="menu" />
+          </button>
+        </div>
+
+        <div
+          id="drawer-navigation"
+          class="fixed backdrop-blur-[12px] bg-[#B17955]/70 top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full w-80 border-e border-default"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <div class="border-b border-default pb-4 flex items-center">
+            <a href="/" class="flex items-center space-x-2">
+              <img src="../Images/Logo.svg" class="h-6 w-6" alt="Logo" />
+              <span class="text-[#b87641] text-xl">Аната </span>
+              <span class="text-lg">– Кухни</span>
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Закрыть меню</span>
+            </button>
+          </div>
+          <div class="py-5 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a
+                  href="./index.html"
+                  class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6.025A7.5 7.5 0 1 0 17.975 14H10V6.025Z"
+                    />
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13.5 3c-.169 0-.334.014-.5.025V11h7.975c.011-.166.025-.331.025-.5A7.5 7.5 0 0 0 13.5 3Z"
+                    />
+                  </svg>
+                  <span class="ms-3">Главная</span>
+                </a>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full justify-between px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group"
+                  aria-controls="dropdown-example"
+                  data-collapse-toggle="dropdown-example"
+                >
+                  <svg
+                    class="shrink-0 w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 text-left whitespace-nowrap"
+                    >Наши работы</span
+                  >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 9-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="./otziv.html"
+                      class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand"
+                      target="_blank"
+                      >Отзывы</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./obzor.html"
+                      class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand"
+                      target="_blank"
+                      >Видео</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./location.html"
+                      class="pl-10 flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand"
+                      target="_blank"
+                      >Наша локатция</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 - BOLIM -->
+    <nav class="border-b border-gray-200">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
+          <li>
+            <a
+              href="../index.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Главная</a
+            >
+          </li>
+          <li>
+            <a
+              href="./catalog.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Наши работы</a
+            >
+          </li>
+          <li>
+            <a href="./otziv.html" class="text-sm text-gray-700" target="_blank"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a href="./obzor.html" class="text-sm text-gray-700" target="_blank"
+              >Видео</a
+            >
+          </li>
+          <li>
+            <a
+              href="./location.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Наша локатция</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 3 - BOLIM -->
+    <div class="ochirish">
+      <div class="pl">
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__text">Loading…</div>
+      </div>
+    </div>
+
+    <!-- 4 - BOLIM -->
+    <div class="border-b border-gray-200 bg-[#f5f3f0]">
+      <div
+        class="max-w-[1200px] mx-auto w-full px-4 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2 flex-wrap">
+          <button
+            class="filter-btn bg-white border border-gray-200 rounded-xl px-5 py-2 text-sm font-medium text-gray-800"
+          >
+            Стиль
+          </button>
+          <button
+            class="filter-btn bg-white border border-gray-200 rounded-xl px-5 py-2 text-sm font-medium text-gray-800"
+          >
+            Фасад
+          </button>
+          <button
+            class="filter-btn bg-white border border-gray-200 rounded-xl px-5 py-2 text-sm font-medium text-gray-800"
+          >
+            Форма
+          </button>
+          <button
+            class="filter-btn bg-white border border-gray-200 rounded-xl px-5 py-2 text-sm font-medium text-gray-800"
+          >
+            Цвет
+          </button>
+          <button
+            class="filter-btn bg-white border border-gray-200 rounded-xl px-5 py-2 text-sm font-medium text-gray-800"
+          >
+            Размер
+          </button>
+          <button
+            class="filter-btn bg-white border border-gray-200 rounded-xl px-5 py-2 text-sm font-medium text-gray-800"
+          >
+            Цена
+          </button>
+        </div>
+        <button
+          class="flex items-center gap-2 text-sm font-medium text-gray-800 ml-4 whitespace-nowrap"
+        >
+          Самые популярные
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 5- BOLIM -->
+    <div class="bg-[#f5f3f0]">
+      <div class="max-w-[1200px] mx-auto w-full px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="cards-grid">
+          <!-- Карточка 1 -->
+          <div
+            class="card-item bg-white rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="relative overflow-hidden" style="height: 340px">
+              <div
+                id="s1"
+                class="flex transition-transform duration-300"
+                style="height: 340px"
+              >
+                <img
+                  src="../Images/headerR1.png"
+                  alt="Кухня Teramo"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR2.png"
+                  alt="Кухня Teramo"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR3.png"
+                  alt="Кухня Teramo"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+              </div>
+              <button
+                onclick="slidePrev('s1')"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="slideNext('s1')"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2">
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Видеообзор
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Видеоотзыв
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl w-9 h-9 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="absolute bottom-3 right-3 text-xs text-white"
+                >* Фото от сборщика</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">Кухня Teramo</h3>
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span class="flex items-center gap-1"
+                  >Массив дуба
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >Фрезеровка
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >7,2 м.п.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="text-xl font-bold text-gray-900">125 000 ₽</span>
+                  <span class="text-sm text-gray-400 line-through"
+                    >147 000 ₽</span
+                  >
+                </div>
+                <button
+                  class="bg-[#b07553] text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                >
+                  Рассчитать эту кухню
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div
+            class="card-item bg-white rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative overflow-hidden" style="height: 340px">
+              <div
+                id="s2"
+                class="flex transition-transform duration-300"
+                style="height: 340px"
+              >
+                <img
+                  src="../Images/headerR2.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR3.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR4.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+              </div>
+              <button
+                onclick="slidePrev('s2')"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="slideNext('s2')"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2">
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Видеообзор
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl w-9 h-9 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="absolute bottom-3 right-3 text-xs text-white"
+                >* Фото от клиента</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">
+                Кухня Integrato
+              </h3>
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span class="flex items-center gap-1"
+                  >Cleaf + Эмаль
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >Система без ручек
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >4,2 м.п.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="text-xl font-bold text-gray-900">180 000 ₽</span>
+                  <span class="text-sm text-gray-400 line-through"
+                    >220 000 ₽</span
+                  >
+                </div>
+                <button
+                  class="bg-[#b07553] text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                >
+                  Рассчитать эту кухню
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка 3 -->
+          <div
+            class="card-item bg-white rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative overflow-hidden" style="height: 340px">
+              <div
+                id="s3"
+                class="flex transition-transform duration-300"
+                style="height: 340px"
+              >
+                <img
+                  src="../Images/headerR4.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR1.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR2.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+              </div>
+              <button
+                onclick="slidePrev('s3')"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="slideNext('s3')"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2">
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Видеообзор
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Видеоотзыв
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl w-9 h-9 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="absolute bottom-3 right-3 text-xs text-white"
+                >* Фото от сборщика</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">
+                Кухня Integrato
+              </h3>
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span class="flex items-center gap-1"
+                  >Пластик
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >Система без ручек
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >7,2 м.п.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="text-xl font-bold text-gray-900">270 000 ₽</span>
+                  <span class="text-sm text-gray-400 line-through"
+                    >357 000 ₽</span
+                  >
+                </div>
+                <button
+                  class="bg-[#b07553] text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                >
+                  Рассчитать эту кухню
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка 4 -->
+          <div
+            class="card-item bg-white rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative overflow-hidden" style="height: 340px">
+              <div
+                id="s4"
+                class="flex transition-transform duration-300"
+                style="height: 340px"
+              >
+                <img
+                  src="../Images/headerR4.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR3.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR1.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+              </div>
+              <button
+                onclick="slidePrev('s4')"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="slideNext('s4')"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2">
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Видеообзор
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl w-9 h-9 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="absolute bottom-3 right-3 text-xs text-white"
+                >* Фото от сборщика</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">
+                Кухня Integrato
+              </h3>
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span class="flex items-center gap-1"
+                  >Массив дуба
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >Система без ручек
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >7,2 м.п.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="text-xl font-bold text-gray-900">230 000 ₽</span>
+                  <span class="text-sm text-gray-400 line-through"
+                    >280 000 ₽</span
+                  >
+                </div>
+                <button
+                  class="bg-[#b07553] text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                >
+                  Рассчитать эту кухню
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка 5 -->
+          <div
+            class="card-item bg-white rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="relative overflow-hidden" style="height: 340px">
+              <div
+                id="s5"
+                class="flex transition-transform duration-300"
+                style="height: 340px"
+              >
+                <img
+                  src="../Images/headerR3.png"
+                  alt="Кухня Teramo"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR1.png"
+                  alt="Кухня Teramo"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR4.png"
+                  alt="Кухня Teramo"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+              </div>
+              <button
+                onclick="slidePrev('s5')"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="slideNext('s5')"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2">
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Видеообзор
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Видеоотзыв
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl w-9 h-9 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="absolute bottom-3 right-3 text-xs text-white"
+                >* Фото от сборщика</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">Кухня Teramo</h3>
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span class="flex items-center gap-1"
+                  >Массив дуба
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >Фрезеровка
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >5,4 м.п.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="text-xl font-bold text-gray-900">145 000 ₽</span>
+                  <span class="text-sm text-gray-400 line-through"
+                    >170 000 ₽</span
+                  >
+                </div>
+                <button
+                  class="bg-[#b07553] text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                >
+                  Рассчитать эту кухню
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка 6 -->
+          <div
+            class="card-item bg-white rounded-2xl overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="relative overflow-hidden" style="height: 340px">
+              <div
+                id="s6"
+                class="flex transition-transform duration-300"
+                style="height: 340px"
+              >
+                <img
+                  src="../Images/headerR2.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR4.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+                <img
+                  src="../Images/headerR3.png"
+                  alt="Кухня Integrato"
+                  class="w-full shrink-0 object-cover"
+                  style="height: 340px"
+                />
+              </div>
+              <button
+                onclick="slidePrev('s6')"
+                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onclick="slideNext('s6')"
+                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white rounded-xl w-10 h-10 flex items-center justify-center shadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+              <div class="absolute bottom-3 left-3 flex items-center gap-2">
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl px-3 py-1.5 text-xs font-medium flex items-center gap-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Видеообзор
+                </button>
+                <button
+                  class="bg-white bg-opacity-90 rounded-xl w-9 h-9 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span class="absolute bottom-3 right-3 text-xs text-white"
+                >* Фото от клиента</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">
+                Кухня Integrato
+              </h3>
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span class="flex items-center gap-1"
+                  >Эмаль
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >Система без ручек
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+                <span class="flex items-center gap-1"
+                  >6,0 м.п.
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-3.5 h-3.5 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    /></svg
+                ></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="text-xl font-bold text-gray-900">195 000 ₽</span>
+                  <span class="text-sm text-gray-400 line-through"
+                    >240 000 ₽</span
+                  >
+                </div>
+                <button
+                  class="bg-[#b07553] text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                >
+                  Рассчитать эту кухню
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка показать ещё -->
+        <div class="flex justify-center mt-10">
+          <button
+            class="bg-[#b07553] text-white rounded-2xl px-16 py-4 text-base font-medium"
+          >
+            Показать еще
+          </button>
+        </div>
+
+        <!-- Пагинация -->
+        <div class="flex justify-center items-center gap-3 mt-8 mb-10">
+          <button
+            class="w-10 h-10 rounded-xl bg-white font-semibold text-sm text-gray-900 shadow-sm"
+          >
+            1
+          </button>
+          <button class="w-10 h-10 rounded-xl text-sm text-gray-700">2</button>
+          <button class="w-10 h-10 rounded-xl text-sm text-gray-700">3</button>
+          <button class="w-10 h-10 rounded-xl text-sm text-gray-700">4</button>
+          <span
+            class="w-10 h-10 flex items-center justify-center text-sm text-gray-700"
+            >...</span
+          >
+          <button class="w-10 h-10 rounded-xl text-sm text-gray-700">15</button>
+          <button
+            class="w-10 h-10 flex items-center justify-center text-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 - BOLIM -->
+    <div class="bg-[#2b2b2b] mt-6">
+      <div class="max-w-[1200px] mx-auto w-full px-4 py-12">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div>
+            <h4 class="text-white font-bold mb-4">Стиль</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-gray-400 text-sm">Классика</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Неоклассика</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Прованс</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Современный</a></li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Скандинавский</a>
+              </li>
+              <li><a href="#" class="text-gray-400 text-sm">Лофт</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Барокко</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Минимализм</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Фасад</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-gray-400 text-sm">МДФ</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Эмаль</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Пластик</a></li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Массив дерева</a>
+              </li>
+              <li><a href="#" class="text-gray-400 text-sm">Акрил</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">ЛДСП</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Дуб</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Шпон</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Форма кухни</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-gray-400 text-sm">Прямые</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Г-образные</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">П-образные</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">Угловые</a></li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">С барной стойкой</a>
+              </li>
+              <li><a href="#" class="text-gray-400 text-sm">С островом</a></li>
+              <li><a href="#" class="text-gray-400 text-sm">С пеналом</a></li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Нестандартные</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Цвет</h4>
+            <ul class="space-y-2.5">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-white inline-block border border-gray-500"
+                  ></span
+                  >Белые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-gray-400 inline-block"
+                  ></span
+                  >Серые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#b07553] inline-block"
+                  ></span
+                  >Капучино</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#e8d8b8] inline-block"
+                  ></span
+                  >Бежевые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#8a9e7a] inline-block"
+                  ></span
+                  >Оливковые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#7ab8b0] inline-block"
+                  ></span
+                  >Мятный</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-gray-800 inline-block"
+                  ></span
+                  >Черные</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#7b3f2a] inline-block"
+                  ></span
+                  >Коричневые</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Размер</h4>
+            <ul class="space-y-2.5">
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Небольшие кухни</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 4 метра</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 5 метра</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 6 метра</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 8 метра</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 10 метра</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 12 метра</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm">Кухни 14 метра</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 600, once: true, offset: 50 });
+
+      var sliderState = {};
+
+      function slidePrev(id) {
+        if (sliderState[id] === undefined) sliderState[id] = 0;
+        var track = document.getElementById(id);
+        var count = track.children.length;
+        sliderState[id] = (sliderState[id] - 1 + count) % count;
+        track.style.transform = "translateX(-" + sliderState[id] * 100 + "%)";
+      }
+
+      function slideNext(id) {
+        if (sliderState[id] === undefined) sliderState[id] = 0;
+        var track = document.getElementById(id);
+        var count = track.children.length;
+        sliderState[id] = (sliderState[id] + 1) % count;
+        track.style.transform = "translateX(-" + sliderState[id] * 100 + "%)";
+      }
+
+      window.addEventListener("load", function () {
+        var loader = document.querySelector(".ochirish");
+        if (loader) loader.style.display = "none";
+      });
+
+      // Filter buttons toggle
+      document.querySelectorAll(".filter-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var isActive = btn.classList.contains("bg-[#b07553]");
+          document.querySelectorAll(".filter-btn").forEach(function (b) {
+            b.classList.remove(
+              "bg-[#b07553]",
+              "text-white",
+              "border-transparent",
+            );
+            b.classList.add("bg-white", "text-gray-800", "border-gray-200");
+          });
+          if (!isActive) {
+            btn.classList.remove(
+              "bg-white",
+              "text-gray-800",
+              "border-gray-200",
+            );
+            btn.classList.add(
+              "bg-[#b07553]",
+              "text-white",
+              "border-transparent",
+            );
+          }
+        });
+      });
+    </script>
+    <script src="/Js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аната – Кухни</title>
+    <link rel="icon" href="../Images/Logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <base target="_blank" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- 1 - BOLIM -->
+    <div class="border-b border-gray-200">
+      <div
+        class="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4 py-3"
+      >
+        <a href="/" class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 rounded-full bg-[#e8d5c0] flex items-center justify-center"
+          >
+            <span class="text-[#b87641] text-lg"
+              ><img src="../Images/Logo.svg" alt="Logo"
+            /></span>
+          </div>
+          <span class="text-[#b87641] text-xl">Аната </span>
+          <span class="text-lg">– Кухни</span>
+        </a>
+
+        <div class="flex items-center gap-8 max-[983px]:hidden">
+          <div class="text-sm text-gray-600 text-center">
+            Москва,<br />Дмитровское шоссе, д 62 стр 5
+          </div>
+          <div class="text-sm text-center">
+            <div class="text-gray-900">+7 499 321-20-63</div>
+            <div>Заказать звонок</div>
+          </div>
+          <div class="text-sm text-center">
+            <div class="text-gray-900">9:00 - 20:00</div>
+            <div class="text-gray-500">ежедневно</div>
+          </div>
+          <button class="dark ml-3">
+            <img
+              src="/Images/light_mode_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"
+              class="sun"
+              alt=""
+            />
+            <img
+              src="/Images/dark_mode_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"
+              class="moon"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="hidden max-[983px]:inline-flex text-center">
+          <button
+            class="inline-flex items-center justify-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+          >
+            <img src="../Images/Menu.svg" alt="menu" />
+          </button>
+        </div>
+
+        <div
+          id="drawer-navigation"
+          class="fixed backdrop-blur-[12px] bg-[#B17955]/70 top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full w-80 border-e border-default"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <div class="border-b border-default pb-4 flex items-center">
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-2 rtl:space-x-reverse"
+              target="_blank"
+            >
+              <img
+                src="../Images/Logo.svg"
+                class="h-6 w-6"
+                alt="Flowbite Logo"
+              />
+              <span class="text-[#b87641] text-xl">Аната </span>
+              <span class="text-lg">– Кухни</span>
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Закрыть меню</span>
+            </button>
+          </div>
+          <nav class="border-b border-gray-200">
+            <div class="max-w-[1200px] mx-auto w-full px-4">
+              <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
+                <li>
+                  <a href="../index.html" class="text-sm text-gray-700"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./catalog.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Наши работы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./otziv.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Отзывы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./obzor.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Видео</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./location.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Наша локатция</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 - BOLIM -->
+    <nav class="border-b border-gray-200">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
+          <li>
+            <a href="../index.html" class="text-sm text-gray-700">Главная</a>
+          </li>
+          <li>
+            <a href="./catalog.html" class="text-sm text-gray-700"
+              >Наши работы</a
+            >
+          </li>
+          <li>
+            <a href="./otziv.html" class="text-sm text-gray-700">Отзывы</a>
+          </li>
+          <li>
+            <a href="./obzor.html" class="text-sm text-gray-700">Видео</a>
+          </li>
+          <li>
+            <a href="./location.html" class="text-sm text-gray-700"
+              >Наша локатция</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="ochirish">
+      <div class="pl">
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__text">Loading…</div>
+      </div>
+    </div>
+
+    <!-- 3 - BOLIM -->
+    <section class="py-10">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <h2 class="text-3xl font-bold text-black mb-8">Отзывы</h2>
+
+        <div class="flex gap-8 items-start">
+          <!-- Левая колонка: список отзывов -->
+          <div class="flex-1">
+            <!-- Отзыв 1: Надежда -->
+            <div class="py-6">
+              <div class="flex items-center gap-4 mb-3">
+                <span class="font-bold text-black text-base">Надежда</span>
+                <div class="flex gap-0.5">
+                  <div class="rating">
+                    <input value="5" name="rate1" id="star1-5" type="radio" />
+                    <label title="text" for="star1-5"></label>
+                    <input
+                      value="4"
+                      name="rate1"
+                      id="star1-4"
+                      type="radio"
+                      checked
+                    />
+                    <label title="text" for="star1-4"></label>
+                    <input value="3" name="rate1" id="star1-3" type="radio" />
+                    <label title="text" for="star1-3"></label>
+                    <input value="2" name="rate1" id="star1-2" type="radio" />
+                    <label title="text" for="star1-2"></label>
+                    <input value="1" name="rate1" id="star1-1" type="radio" />
+                    <label title="text" for="star1-1"></label>
+                  </div>
+                </div>
+              </div>
+              <p class="text-black text-sm leading-relaxed mb-4">
+                Очень симпатичный комплект мебели. Доставка пришла в срок.
+                Собирали самостоятельно, все интуитивно просто. Благодарю.
+              </p>
+              <div class="flex gap-2 mb-4">
+                <img
+                  src="../Images/X1.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+                <img
+                  src="../Images/X3.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+                <img
+                  src="../Images/X4.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+              </div>
+              <p class="text-gray-400 text-sm">21 сентября</p>
+            </div>
+
+            <div class="border-t border-gray-300"></div>
+
+            <!-- Отзыв 2: Ольга -->
+            <div class="py-6">
+              <div class="flex items-center gap-4 mb-3">
+                <span class="font-bold text-black text-base">Ольга</span>
+                <div class="flex gap-0.5">
+                  <div class="rating">
+                    <input value="5" name="rate2" id="star2-5" type="radio" />
+                    <label title="text" for="star2-5"></label>
+                    <input value="4" name="rate2" id="star2-4" type="radio" />
+                    <label title="text" for="star2-4"></label>
+                    <input
+                      value="3"
+                      name="rate2"
+                      id="star2-3"
+                      type="radio"
+                      checked
+                    />
+                    <label title="text" for="star2-3"></label>
+                    <input value="2" name="rate2" id="star2-2" type="radio" />
+                    <label title="text" for="star2-2"></label>
+                    <input value="1" name="rate2" id="star2-1" type="radio" />
+                    <label title="text" for="star2-1"></label>
+                  </div>
+                </div>
+              </div>
+              <p class="text-black text-sm leading-relaxed mb-4">
+                Кухня супер, качественно собрано. Доставка пришла в срок.
+                Собирали самостоятельно, все интуитивно просто. Благодарю.
+              </p>
+              <div class="flex gap-2 mb-4">
+                <img
+                  src="../Images/X2.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+                <img
+                  src="../Images/X3.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+              </div>
+              <p class="text-gray-400 text-sm">17 сентября</p>
+            </div>
+
+            <div class="border-t border-gray-300"></div>
+
+            <!-- Отзыв 3: Анастасия -->
+            <div class="py-6">
+              <div class="flex items-center gap-4 mb-3">
+                <span class="font-bold text-black text-base">Анастасия</span>
+                <div class="flex gap-0.5">
+                  <div class="rating">
+                    <input value="5" name="rate3" id="star3-5" type="radio" />
+                    <label title="text" for="star3-5"></label>
+                    <input value="4" name="rate3" id="star3-4" type="radio" />
+                    <label title="text" for="star3-4"></label>
+                    <input
+                      value="3"
+                      name="rate3"
+                      id="star3-3"
+                      type="radio"
+                      checked
+                    />
+                    <label title="text" for="star3-3"></label>
+                    <input value="2" name="rate3" id="star3-2" type="radio" />
+                    <label title="text" for="star3-2"></label>
+                    <input value="1" name="rate3" id="star3-1" type="radio" />
+                    <label title="text" for="star3-1"></label>
+                  </div>
+                </div>
+              </div>
+              <p class="text-black text-sm leading-relaxed mb-4">
+                Очень симпатичный комплект мебели. Доставка пришла в срок.
+                Собирали самостоятельно, все интуитивно просто. Благодарю.
+              </p>
+              <div class="flex gap-2 mb-4">
+                <img
+                  src="../Images/X5.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+                <img
+                  src="../Images/X6.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+                <img
+                  src="../Images/X7.png"
+                  alt=""
+                  class="w-[130px] h-[90px] object-cover rounded"
+                />
+              </div>
+              <p class="text-gray-400 text-sm">16 сентября</p>
+            </div>
+
+            <div class="border-t border-gray-300"></div>
+
+            <!-- Кнопка "Показать ещё" -->
+            <div class="flex justify-center mt-8 mb-8">
+              <button
+                class="bg-[#B07854] text-white text-sm px-10 py-3 rounded-lg"
+              >
+                Показать еще
+              </button>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="flex items-center justify-center gap-3 mb-4">
+              <span
+                class="w-9 h-9 flex items-center justify-center border border-black rounded bg-white text-black text-sm font-medium"
+                >1</span
+              >
+              <a
+                href="/"
+                class="w-9 h-9 flex items-center justify-center text-black text-sm"
+                >2</a
+              >
+              <a
+                href="/"
+                class="w-9 h-9 flex items-center justify-center text-black text-sm"
+                >3</a
+              >
+              <a
+                href="/"
+                class="w-9 h-9 flex items-center justify-center text-black text-sm"
+                >4</a
+              >
+              <span
+                class="w-9 h-9 flex items-center justify-center text-black text-sm"
+                >...</span
+              >
+              <a
+                href="/"
+                class="w-9 h-9 flex items-center justify-center text-black text-sm"
+                >15</a
+              >
+              <a
+                href="/"
+                class="w-9 h-9 flex items-center justify-center text-black text-sm"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Правая колонка: карточка рейтинга -->
+          <div class="w-[280px] shrink-0 sticky top-6">
+            <div class="bg-white rounded-2xl p-6">
+              <div class="flex items-center justify-between mb-5">
+                <div class="flex gap-0.5">
+                  <div class="rating">
+                    <input
+                      value="5"
+                      name="rate-side"
+                      id="star-side-5"
+                      type="radio"
+                    />
+                    <label title="text" for="star-side-5"></label>
+                    <input
+                      value="4"
+                      name="rate-side"
+                      id="star-side-4"
+                      type="radio"
+                    />
+                    <label title="text" for="star-side-4"></label>
+                    <input
+                      value="3"
+                      name="rate-side"
+                      id="star-side-3"
+                      type="radio"
+                      checked
+                    />
+                    <label title="text" for="star-side-3"></label>
+                    <input
+                      value="2"
+                      name="rate-side"
+                      id="star-side-2"
+                      type="radio"
+                    />
+                    <label title="text" for="star-side-2"></label>
+                    <input
+                      value="1"
+                      name="rate-side"
+                      id="star-side-1"
+                      type="radio"
+                    />
+                    <label title="text" for="star-side-1"></label>
+                  </div>
+                </div>
+                <span class="text-xl font-semibold text-black">4.9 / 5</span>
+              </div>
+              <button
+                data-modal-target="review-modal"
+                data-modal-toggle="review-modal"
+                class="w-full bg-[#B07854] text-white text-sm py-3 rounded-lg"
+              >
+                Написать свой отзыв
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL: Мой отзыв -->
+    <div
+      id="review-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-[520px] max-h-full">
+        <div class="relative bg-white rounded-2xl shadow-lg">
+          <!-- Header -->
+          <div class="flex items-center justify-between p-6 pb-2">
+            <h3 class="text-xl font-semibold text-black">Мой отзыв</h3>
+            <button
+              type="button"
+              data-modal-hide="review-modal"
+              class="text-gray-400 hover:text-gray-600"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Закрыть</span>
+            </button>
+          </div>
+
+          <!-- Body -->
+          <div class="p-6 pt-4">
+            <div class="space-y-5">
+              <!-- Представьтесь -->
+              <div>
+                <label class="block text-sm text-gray-500 mb-2"
+                  >Представьтесь</label
+                >
+                <input
+                  type="text"
+                  value="Андрей"
+                  class="w-full border-b border-gray-300 pb-2 text-base text-black focus:outline-none focus:border-[#B07854] bg-transparent"
+                />
+              </div>
+
+              <!-- Текст отзыва -->
+              <div>
+                <label class="block text-sm text-gray-500 mb-2"
+                  >Текст отзыва</label
+                >
+                <textarea
+                  rows="4"
+                  class="w-full border border-gray-300 rounded-lg p-3 text-sm text-black focus:outline-none focus:border-[#B07854] resize-none"
+                >
+Кухня супер, качественно собрано. Доставка пришла в срок. Собирали самостоятельно, все интуитивно просто. Благодарю.</textarea
+                >
+              </div>
+
+              <!-- Загрузка фото -->
+              <div>
+                <label
+                  for="dropzone-file"
+                  class="flex flex-col items-center justify-center w-full h-[140px] border border-dashed border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center pt-5 pb-6"
+                  >
+                    <img src="../Images/photo.svg" alt="" />
+                    <p class="text-sm text-black">Не забудьте добавить фото</p>
+                    <p class="text-xs text-gray-400 mt-1">
+                      jpg, jpeg, png менее 10 МБ
+                    </p>
+                  </div>
+                  <input
+                    id="dropzone-file"
+                    type="file"
+                    class="hidden"
+                    multiple
+                    accept=".jpg,.jpeg,.png"
+                  />
+                </label>
+              </div>
+
+              <!-- Оценка -->
+              <div class="flex items-center gap-3">
+                <span class="text-sm text-black">Оценка</span>
+                <div class="flex gap-1">
+                  <div class="rating">
+                    <input value="5" name="rate3" id="star3-5" type="radio" />
+                    <label title="text" for="star3-5"></label>
+                    <input value="4" name="rate3" id="star3-4" type="radio" />
+                    <label title="text" for="star3-4"></label>
+                    <input
+                      value="3"
+                      name="rate3"
+                      id="star3-3"
+                      type="radio"
+                      checked
+                    />
+                    <label title="text" for="star3-3"></label>
+                    <input value="2" name="rate3" id="star3-2" type="radio" />
+                    <label title="text" for="star3-2"></label>
+                    <input value="1" name="rate3" id="star3-1" type="radio" />
+                    <label title="text" for="star3-1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Кнопка -->
+              <div class="flex justify-center pt-2">
+                <button
+                  id="submit-review-btn"
+                  type="button"
+                  class="bg-[#B07854] text-white text-sm px-10 py-3 rounded-lg"
+                >
+                  Оставить отзыв
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal backdrop blur overlay -->
+    <div
+      id="review-modal-backdrop"
+      class="fixed inset-0 z-40 hidden bg-black/40 backdrop-blur-[50px]"
+      data-modal-hide="review-modal"
+    ></div>
+
+    <!-- 4 - BOLIM -->
+    <section class="bg-[#2b2b2b] py-12">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Стиль</p>
+            <ul class="space-y-2">
+              <li>
+                <a href="/pages/klassika.html" class="text-gray-300 text-sm"
+                  >Классика</a
+                >
+              </li>
+              <li>
+                <a href="/pages/neoklassika.html" class="text-gray-300 text-sm"
+                  >Неоклассика</a
+                >
+              </li>
+              <li>
+                <a href="/pages/provans.html" class="text-gray-300 text-sm"
+                  >Прованс</a
+                >
+              </li>
+              <li>
+                <a href="/pages/sovremennyj.html" class="text-gray-300 text-sm"
+                  >Современный</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/skandinavskij.html"
+                  class="text-gray-300 text-sm"
+                  >Скандинавский</a
+                >
+              </li>
+              <li>
+                <a href="/pages/loft.html" class="text-gray-300 text-sm"
+                  >Лофт</a
+                >
+              </li>
+              <li>
+                <a href="/pages/barokko.html" class="text-gray-300 text-sm"
+                  >Барокко</a
+                >
+              </li>
+              <li>
+                <a href="/pages/minimalizm.html" class="text-gray-300 text-sm"
+                  >Минимализм</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Фасад</p>
+            <ul class="space-y-2">
+              <li>
+                <a href="/pages/mdf.html" class="text-gray-300 text-sm">МДФ</a>
+              </li>
+              <li>
+                <a href="/pages/emal.html" class="text-gray-300 text-sm"
+                  >Эмаль</a
+                >
+              </li>
+              <li>
+                <a href="/pages/plastik.html" class="text-gray-300 text-sm"
+                  >Пластик</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/massiv-dereva.html"
+                  class="text-gray-300 text-sm"
+                  >Массив дерева</a
+                >
+              </li>
+              <li>
+                <a href="/pages/akril.html" class="text-gray-300 text-sm"
+                  >Акрил</a
+                >
+              </li>
+              <li>
+                <a href="/pages/ldsp.html" class="text-gray-300 text-sm"
+                  >ЛДСП</a
+                >
+              </li>
+              <li>
+                <a href="/pages/dub.html" class="text-gray-300 text-sm">Дуб</a>
+              </li>
+              <li>
+                <a href="/pages/shpon.html" class="text-gray-300 text-sm"
+                  >Шпон</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Форма кухни</p>
+            <ul class="space-y-2">
+              <li>
+                <a href="/pages/pryamye.html" class="text-gray-300 text-sm"
+                  >Прямые</a
+                >
+              </li>
+              <li>
+                <a href="/pages/g-obraznye.html" class="text-gray-300 text-sm"
+                  >Г-образные</a
+                >
+              </li>
+              <li>
+                <a href="/pages/p-obraznye.html" class="text-gray-300 text-sm"
+                  >П-образные</a
+                >
+              </li>
+              <li>
+                <a href="/pages/uglovye.html" class="text-gray-300 text-sm"
+                  >Угловые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/s-barnoj-stojkoj.html"
+                  class="text-gray-300 text-sm"
+                  >С барной стойкой</a
+                >
+              </li>
+              <li>
+                <a href="/pages/s-ostrovom.html" class="text-gray-300 text-sm"
+                  >С островом</a
+                >
+              </li>
+              <li>
+                <a href="/pages/s-penalom.html" class="text-gray-300 text-sm"
+                  >С пеналом</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/nestandartnye.html"
+                  class="text-gray-300 text-sm"
+                  >Нестандартные</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Цвет</p>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/pages/belye.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-white border border-gray-500 inline-block"
+                  ></span
+                  >Белые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/serye.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-gray-400 inline-block"
+                  ></span
+                  >Серые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/kapuchino.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#b5845a] inline-block"
+                  ></span
+                  >Капучино</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/bezhevye.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#d9c9a8] inline-block"
+                  ></span
+                  >Бежевые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/olivkovye.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#7a8c6e] inline-block"
+                  ></span
+                  >Оливковые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/myatnyj.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#7ececa] inline-block"
+                  ></span
+                  >Мятный</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/chernye.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#555] inline-block"
+                  ></span
+                  >Черные</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/korichnevye.html"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-[#8b4513] inline-block"
+                  ></span
+                  >Коричневые</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Размер</p>
+            <ul class="space-y-2">
+              <li>
+                <a href="/pages/nebolshie.html" class="text-gray-300 text-sm"
+                  >Небольшие кухни</a
+                >
+              </li>
+              <li>
+                <a href="/pages/4-metra.html" class="text-gray-300 text-sm"
+                  >Кухни 4 метра</a
+                >
+              </li>
+              <li>
+                <a href="/pages/5-metrov.html" class="text-gray-300 text-sm"
+                  >Кухни 5 метра</a
+                >
+              </li>
+              <li>
+                <a href="/pages/6-metrov.html" class="text-gray-300 text-sm"
+                  >Кухни 6 метра</a
+                >
+              </li>
+              <li>
+                <a href="/pages/8-metrov.html" class="text-gray-300 text-sm"
+                  >Кухни 8 метра</a
+                >
+              </li>
+              <li>
+                <a href="/pages/10-metrov.html" class="text-gray-300 text-sm"
+                  >Кухни 10 метра</a
+                >
+              </li>
+              <li>
+                <a href="/pages/12-metrov.html" class="text-gray-300 text-sm"
+                  >Кухни 12 метра</a
+                >
+              </li>
+              <li>
+                <a href="/pages/14-metrov.html" class="text-gray-300 text-sm"
+                  >Кухни 14 метра</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 - BOLIM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: false, offset: 120 });
+
+      const slides = document.querySelectorAll(".slide-item");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      let currentIdx = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.remove("opacity-0", "pointer-events-none");
+            slide.classList.add("opacity-100");
+          } else {
+            slide.classList.remove("opacity-100");
+            slide.classList.add("opacity-0", "pointer-events-none");
+          }
+        });
+      }
+
+      function goNextSlide() {
+        currentIdx = (currentIdx + 1) % slides.length;
+        showSlide(currentIdx);
+      }
+
+      function goPrevSlide() {
+        currentIdx = (currentIdx - 1 + slides.length) % slides.length;
+        showSlide(currentIdx);
+      }
+
+      if (prevBtn && nextBtn && slides.length) {
+        prevBtn.addEventListener("click", goPrevSlide);
+        nextBtn.addEventListener("click", goNextSlide);
+        showSlide(0);
+      }
+
+      const slideIndexes = {};
+
+      window.sliderPrev = function (id) {
+        const track = document.querySelector(`#${id} .slider-track`);
+        if (!track) return;
+        const imgs = track.querySelectorAll("img");
+        if (!slideIndexes[id]) slideIndexes[id] = 0;
+        let idx = slideIndexes[id];
+        idx = (idx - 1 + imgs.length) % imgs.length;
+        slideIndexes[id] = idx;
+        track.style.transform = `translateX(-${idx * 100}%)`;
+      };
+
+      window.sliderNext = function (id) {
+        const track = document.querySelector(`#${id} .slider-track`);
+        if (!track) return;
+        const imgs = track.querySelectorAll("img");
+        if (!slideIndexes[id]) slideIndexes[id] = 0;
+        let idx = slideIndexes[id];
+        idx = (idx + 1) % imgs.length;
+        slideIndexes[id] = idx;
+        track.style.transform = `translateX(-${idx * 100}%)`;
+      };
+
+      window.addEventListener("load", function () {
+        AOS.refresh();
+      });
+
+      // Modal logic
+      const modal = document.getElementById("review-modal");
+      const backdrop = document.getElementById("review-modal-backdrop");
+      const submitBtn = document.getElementById("submit-review-btn");
+
+      function showModalBackdrop() {
+        backdrop.classList.remove("hidden");
+      }
+
+      function hideModalBackdrop() {
+        backdrop.classList.add("hidden");
+      }
+
+      if (modal) {
+        modal.addEventListener("show.flowbite.modal", showModalBackdrop);
+        modal.addEventListener("hide.flowbite.modal", hideModalBackdrop);
+      }
+
+      backdrop.addEventListener("click", function () {
+        const hideBtn = modal.querySelector("[data-modal-hide]");
+        if (hideBtn) hideBtn.click();
+      });
+
+      // Submit review — close modal
+      if (submitBtn) {
+        submitBtn.addEventListener("click", function () {
+          const hideBtn = modal.querySelector("[data-modal-hide]");
+          if (hideBtn) hideBtn.click();
+        });
+      }
+    </script>
+    <script src="/Js/main.js"></script>
+  </body>
+</html>

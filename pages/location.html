@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аната - Кухни</title>
+    <link rel="icon" href="../Images/Logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- 1 - BOLIM  -->
+    <div class="border-b border-gray-200">
+      <div
+        class="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4 py-3"
+      >
+        <a href="/" class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 rounded-full bg-[#e8d5c0] flex items-center justify-center"
+          >
+            <img src="../Images/Logo.svg" alt="Logo" class="w-6 h-6" />
+          </div>
+          <span class="text-[#b87641] text-xl">Аната</span>
+          <span class="text-lg">– Кухни</span>
+        </a>
+
+        <div class="flex items-center gap-8 max-[983px]:hidden">
+          <div class="text-sm text-gray-600 text-center">
+            Москва,<br />Дмитровское шоссе, д 62 стр 5
+          </div>
+          <div class="text-sm text-center">
+            <div class="text-gray-900">+7 499 321-20-63</div>
+            <div>Заказать звонок</div>
+          </div>
+          <div class="text-sm text-center">
+            <div class="text-gray-900">9:00 - 20:00</div>
+            <div class="text-gray-500">ежедневно</div>
+          </div>
+          <button class="dark ml-3">
+            <img
+              src="/Images/light_mode_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"
+              class="sun"
+              alt=""
+            />
+            <img
+              src="/Images/dark_mode_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"
+              class="moon"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="hidden max-[983px]:inline-flex text-center">
+          <button
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="inline-flex items-center justify-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+          >
+            <img src="../Images/Menu.svg" alt="menu" class="w-6 h-6" />
+          </button>
+        </div>
+
+        <div
+          id="drawer-navigation"
+          class="fixed backdrop-blur-[12px] bg-[#B17955]/70 top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full w-80 border-e border-default"
+          tabindex="-1"
+        >
+          <div class="border-b border-default pb-4 flex items-center">
+            <a href="/" class="flex items-center space-x-2">
+              <img src="../Images/Logo.svg" class="h-6 w-6" alt="Logo" />
+              <span class="text-[#b87641] text-xl">Аната</span>
+              <span class="text-lg">– Кухни</span>
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav class="border-b border-gray-200">
+            <div class="max-w-[1200px] mx-auto w-full px-4">
+              <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
+                <li>
+                  <a
+                    href="../index.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./catalog.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                  >
+                    >Наши работы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./otziv.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                  >
+                    >Отзывы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./obzor.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Видео</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./location.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
+                    >Наша локатция</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <nav class="border-b border-gray-200">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
+          <li>
+            <a
+              href="../index.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Главная</a
+            >
+          </li>
+          <li>
+            <a
+              href="./catalog.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Наши работы</a
+            >
+          </li>
+          <li>
+            <a
+              href="./otzyvy.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a href="./video.html" class="text-sm text-gray-700" target="_blank"
+              >Видео</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="ochirish">
+      <div class="pl">
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__dot"></div>
+        <div class="pl__text">Loading…</div>
+      </div>
+    </div>
+
+    <!-- 2 - BOLIM -->
+    <div class="max-w-[1200px] mx-auto w-full px-4">
+      <h1
+        class="text-3xl md:text-4xl font-bold text-gray-900 mb-8"
+        data-aos="fade-right"
+      >
+        Контакты
+      </h1>
+
+      <!-- 3 - BOLIM -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <!-- 4 - BOLIM -->
+        <div
+          class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm"
+          data-aos="fade-up"
+        >
+          <div class="mb-6">
+            <p class="text-sm text-gray-500 mb-1">Адрес</p>
+            <p class="text-gray-900 text-lg">
+              г. Москва, Дмитровское шоссе д 62 стр.5
+            </p>
+          </div>
+          <div class="mb-6">
+            <p class="text-sm text-gray-500 mb-1">Телефон</p>
+            <p class="text-gray-900 text-lg">+7 499 321-20-63</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-500 mb-1">Режим работы</p>
+            <p class="text-gray-900">
+              Салон работает с 10 утра до 8 вечера.<br />Без выходных.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5 - BOLIM -->
+        <div
+          class="rounded-2xl overflow-hidden shadow-md h-[350px] lg:h-[350px]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A8e3e5b5b5b5b5b5b5b5b5b5b5b5b5b5b&mode=search&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%20%D0%B4%2062%20%D1%81%D1%82%D1%80%205&z=17"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allowfullscreen="true"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- 6 - BOLIM -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12"
+        data-aos="zoom-in"
+      >
+        <div class="bg-[#f5f2ef] rounded-2xl p-6 text-center">
+          <img
+            src="../Images/Frame (5).svg"
+            alt="Парковка"
+            class="w-16 h-16 mx-auto mb-3 rounded-full object-cover"
+          />
+          <p class="font-semibold text-gray-900 text-lg">Бесплатная парковка</p>
+        </div>
+        <div class="bg-[#f5f2ef] rounded-2xl p-6 text-center">
+          <img
+            src="../Images/metro.svg"
+            alt="Метро"
+            class="w-16 h-16 mx-auto mb-3 rounded-full object-cover"
+          />
+          <p class="font-semibold text-gray-900 text-lg">3 минуты от метро</p>
+        </div>
+        <div class="bg-[#f5f2ef] rounded-2xl p-6 text-center">
+          <img
+            src="../Images/Group (5).svg"
+            alt="365"
+            class="w-16 h-16 mx-auto mb-3 rounded-full object-cover"
+          />
+          <p class="font-semibold text-gray-900 text-lg">365 м² мебели</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 - BOLIM -->
+    <section class="bg-[#2b2b2b] py-12 mt-8">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Стиль</p>
+            <ul class="space-y-2">
+              <li><a href="/" class="text-gray-300 text-sm">Классика</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Неоклассика</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Прованс</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Современный</a></li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Скандинавский</a>
+              </li>
+              <li><a href="/" class="text-gray-300 text-sm">Лофт</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Барокко</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Минимализм</a></li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Фасад</p>
+            <ul class="space-y-2">
+              <li><a href="/" class="text-gray-300 text-sm">МДФ</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Эмаль</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Пластик</a></li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Массив дерева</a>
+              </li>
+              <li><a href="/" class="text-gray-300 text-sm">Акрил</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">ЛДСП</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Дуб</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Шпон</a></li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Форма кухни</p>
+            <ul class="space-y-2">
+              <li><a href="/" class="text-gray-300 text-sm">Прямые</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Г-образные</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">П-образные</a></li>
+              <li><a href="/" class="text-gray-300 text-sm">Угловые</a></li>
+              <li>
+                <a href="#" class="text-gray-300 text-sm">С барной стойкой</a>
+              </li>
+              <li><a href="#" class="text-gray-300 text-sm">С островом</a></li>
+              <li><a href="#" class="text-gray-300 text-sm">С пеналом</a></li>
+              <li>
+                <a href="#" class="text-gray-300 text-sm">Нестандартные</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Цвет</p>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span
+                    class="w-4 h-4 rounded-full bg-white border border-gray-500"
+                  ></span
+                  >Белые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-gray-400"></span
+                  >Серые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-[#b5845a]"></span
+                  >Капучино</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-[#d9c9a8]"></span
+                  >Бежевые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-[#7a8c6e]"></span
+                  >Оливковые</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-[#7ececa]"></span
+                  >Мятный</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-[#555]"></span>Черные</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 text-sm flex items-center gap-2"
+                  ><span class="w-4 h-4 rounded-full bg-[#8b4513]"></span
+                  >Коричневые</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="text-white font-bold mb-4">Размер</p>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Небольшие кухни</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 4 метра</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 5 метра</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 6 метра</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 8 метра</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 10 метра</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 12 метра</a>
+              </li>
+              <li>
+                <a href="/" class="text-gray-300 text-sm">Кухни 14 метра</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: false, offset: 120 });
+      window.addEventListener("load", () => AOS.refresh());
+    </script>
+    <script src="/Js/main.js"></script>
+  </body>
+</html>
