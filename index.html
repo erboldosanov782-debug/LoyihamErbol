@@ -12,8 +12,15 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
-  <body class="bg-white text-gray-800">
+  <body class="bg-white text-gray-800 overflow-x-hidden">
+    <!-- 2 - BOLIM -->
     <div class="border-b border-gray-200">
       <div
         class="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4 py-3"
@@ -161,31 +168,51 @@
         </div>
       </div>
     </div>
+    <!-- 3 - BOLIM -->
     <nav class="border-b border-gray-200">
       <div class="max-w-[1200px] mx-auto w-full px-4">
         <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
           <li>
-            <a href="/index.html" class="text-sm text-gray-700">Главная</a>
+            <a href="/index.html" class="text-sm text-gray-700" target="_blank"
+              >Главная</a
+            >
           </li>
           <li>
-            <a href="/pages/catalog.html" class="text-sm text-gray-700"
+            <a
+              href="/pages/catalog.html"
+              class="text-sm text-gray-700"
+              target="_blank"
               >Наши работы</a
             >
           </li>
           <li>
-            <a href="/pages/otziv.html" class="text-sm text-gray-700">Отзывы</a>
+            <a
+              href="/pages/otziv.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Отзывы</a
+            >
           </li>
           <li>
-            <a href="/pages/obzor.html" class="text-sm text-gray-700">Видео</a>
+            <a
+              href="/pages/obzor.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Видео</a
+            >
           </li>
           <li>
-            <a href="/pages/location.html" class="text-sm text-gray-700"
+            <a
+              href="/pages/location.html"
+              class="text-sm text-gray-700"
+              target="_blank"
               >Наша локатция</a
             >
           </li>
         </ul>
       </div>
     </nav>
+    <!-- 4 - BOLIM -->
     <div class="ochirish">
       <div class="pl">
         <div class="pl__dot"></div>
@@ -203,7 +230,7 @@
         <div class="pl__text">Loading…</div>
       </div>
     </div>
-    <!-- 2 - BOLIM -->
+    <!-- 5 - BOLIM -->
     <div class="w-full overflow-hidden relative md:h-[560px]">
       <div
         class="slide-item absolute inset-0 flex flex-col md:flex-row w-full h-full transition-opacity duration-700 opacity-100"
@@ -308,10 +335,10 @@
         &#8250;
       </button>
     </div>
-    <!-- 3 - BOLIM  -->
+    <!-- 6 - BOLIM  -->
     <section class="py-14 bg-white" data-aos="fade-up">
       <div class="max-w-[1200px] mx-auto w-full px-4">
-        <h2 class="text-center text-2xl font-bold mb-10" data-aos="fade-down">
+        <h2 class="text-center text-2xl font-bold mb-10" data-aos="fade-up">
           Специально для Вас видео наших кухонь
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -355,7 +382,7 @@
         </div>
       </div>
     </section>
-    <!-- 4 - BOLIM -->
+    <!-- 7 - BOLIM -->
     <section class="py-12 bg-[#f5f2ef]">
       <div class="max-w-[1200px] mx-auto w-full px-4">
         <h2
@@ -367,7 +394,7 @@
 
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Карточка 1 -->
-          <div class="flex-1" data-aos="fade-right">
+          <div class="flex-1" data-aos="fade-up">
             <div class="relative overflow-hidden rounded-t-lg">
               <div id="slider1" class="relative overflow-hidden">
                 <div
@@ -520,7 +547,7 @@
           </div>
 
           <!-- Карточка 2 -->
-          <div class="flex-1" data-aos="fade-up">
+          <div class="flex-1" data-aos="fade-up" data-aos-delay="100">
             <div class="relative overflow-hidden rounded-t-lg">
               <div id="slider2" class="relative overflow-hidden">
                 <div
@@ -657,7 +684,7 @@
 
         <div class="flex flex-col md:flex-row gap-6 mt-6">
           <!-- Карточка 3 -->
-          <div class="flex-1" data-aos="fade-right">
+          <div class="flex-1" data-aos="fade-up">
             <div class="relative overflow-hidden rounded-t-lg">
               <div id="slider3" class="relative overflow-hidden">
                 <div
@@ -806,7 +833,7 @@
             </div>
           </div>
           <!-- Карточка 4 -->
-          <div class="flex-1" data-aos="fade-left">
+          <div class="flex-1" data-aos="fade-up" data-aos-delay="100">
             <div class="relative overflow-hidden rounded-t-lg">
               <div id="slider4" class="relative overflow-hidden">
                 <div
@@ -949,7 +976,7 @@
         </div>
       </div>
     </section>
-    <!-- 5 - BOLIM -->
+    <!-- 8 - BOLIM -->
     <section class="bg-[#2b2b2b] py-12">
       <div class="max-w-[1200px] mx-auto w-full px-4">
         <div class="flex flex-col md:flex-row gap-8">
@@ -1228,7 +1255,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ duration: 800, once: false, offset: 120 });
+      AOS.init({
+        duration: 800,
+        once: false,
+        offset: 120,
+        anchorPlacement: "top-bottom",
+      });
 
       // === ГЛАВНЫЙ СЛАЙДЕР (шапка) ===
       const slides = document.querySelectorAll(".slide-item");

@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../style.css" />
     <base target="_blank" />
   </head>
-  <body class="bg-white text-gray-800">
-    <!-- 1 - BOLIM -->
+  <body class="bg-white text-gray-800 overflow-x-hidden">
+    <!-- 2 - BOLIM -->
     <div class="border-b border-gray-200">
       <div
         class="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4 py-3"
@@ -120,7 +120,10 @@
             <div class="max-w-[1200px] mx-auto w-full px-4">
               <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
                 <li>
-                  <a href="../index.html" class="text-sm text-gray-700"
+                  <a
+                    href="../index.html"
+                    class="text-sm text-gray-700"
+                    target="_blank"
                     >Главная</a
                   >
                 </li>
@@ -163,32 +166,49 @@
       </div>
     </div>
 
-    <!-- 2 - BOLIM -->
+    <!-- 3 - BOLIM -->
     <nav class="border-b border-gray-200">
       <div class="max-w-[1200px] mx-auto w-full px-4">
         <ul class="flex items-center gap-8 py-3 max-[983px]:hidden">
           <li>
-            <a href="../index.html" class="text-sm text-gray-700">Главная</a>
+            <a
+              href="../index.html"
+              class="text-sm text-gray-700"
+              target="_blank"
+              >Главная</a
+            >
           </li>
           <li>
-            <a href="./catalog.html" class="text-sm text-gray-700"
+            <a
+              href="./catalog.html"
+              class="text-sm text-gray-700"
+              target="_blank"
               >Наши работы</a
             >
           </li>
           <li>
-            <a href="./otziv.html" class="text-sm text-gray-700">Отзывы</a>
+            <a href="./otziv.html" class="text-sm text-gray-700" target="_blank"
+              >Отзывы</a
+            >
           </li>
           <li>
-            <a href="./obzor.html" class="text-sm text-gray-700">Видео</a>
+            <a href="./obzor.html" class="text-sm text-gray-700" target="_blank"
+              >Видео</a
+            >
           </li>
           <li>
-            <a href="./location.html" class="text-sm text-gray-700"
+            <a
+              href="./location.html"
+              class="text-sm text-gray-700"
+              target="_blank"
               >Наша локатция</a
             >
           </li>
         </ul>
       </div>
     </nav>
+
+    <!-- 4 - BOLIM -->
     <div class="ochirish">
       <div class="pl">
         <div class="pl__dot"></div>
@@ -207,14 +227,14 @@
       </div>
     </div>
 
-    <!-- 3 - BOLIM -->
+    <!-- 5 - BOLIM -->
     <section class="py-10">
       <div class="max-w-[1200px] mx-auto w-full px-4">
         <h2 class="text-3xl font-bold text-black mb-8">Отзывы</h2>
 
-        <div class="flex gap-8 items-start">
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
           <!-- Левая колонка: список отзывов -->
-          <div class="flex-1">
+          <div class="flex-1 min-w-0">
             <!-- Отзыв 1: Надежда -->
             <div class="py-6">
               <div class="flex items-center gap-4 mb-3">
@@ -244,7 +264,7 @@
                 Очень симпатичный комплект мебели. Доставка пришла в срок.
                 Собирали самостоятельно, все интуитивно просто. Благодарю.
               </p>
-              <div class="flex gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4">
                 <img
                   src="../Images/X1.png"
                   alt=""
@@ -295,7 +315,7 @@
                 Кухня супер, качественно собрано. Доставка пришла в срок.
                 Собирали самостоятельно, все интуитивно просто. Благодарю.
               </p>
-              <div class="flex gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4">
                 <img
                   src="../Images/X2.png"
                   alt=""
@@ -341,7 +361,7 @@
                 Очень симпатичный комплект мебели. Доставка пришла в срок.
                 Собирали самостоятельно, все интуитивно просто. Благодарю.
               </p>
-              <div class="flex gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4">
                 <img
                   src="../Images/X5.png"
                   alt=""
@@ -425,8 +445,10 @@
           </div>
 
           <!-- Правая колонка: карточка рейтинга -->
-          <div class="w-[280px] shrink-0 sticky top-6">
-            <div class="bg-white rounded-2xl p-6">
+          <div class="w-full lg:w-[280px] shrink-0 lg:sticky lg:top-6">
+            <div
+              class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm"
+            >
               <div class="flex items-center justify-between mb-5">
                 <div class="flex gap-0.5">
                   <div class="rating">
@@ -483,7 +505,7 @@
       </div>
     </section>
 
-    <!-- MODAL: Мой отзыв -->
+    <!-- 6 - BOLIM -->
     <div
       id="review-modal"
       tabindex="-1"
@@ -492,7 +514,6 @@
     >
       <div class="relative w-full max-w-[520px] max-h-full">
         <div class="relative bg-white rounded-2xl shadow-lg">
-          <!-- Header -->
           <div class="flex items-center justify-between p-6 pb-2">
             <h3 class="text-xl font-semibold text-black">Мой отзыв</h3>
             <button
@@ -518,11 +539,8 @@
               <span class="sr-only">Закрыть</span>
             </button>
           </div>
-
-          <!-- Body -->
           <div class="p-6 pt-4">
             <div class="space-y-5">
-              <!-- Представьтесь -->
               <div>
                 <label class="block text-sm text-gray-500 mb-2"
                   >Представьтесь</label
@@ -533,8 +551,6 @@
                   class="w-full border-b border-gray-300 pb-2 text-base text-black focus:outline-none focus:border-[#B07854] bg-transparent"
                 />
               </div>
-
-              <!-- Текст отзыва -->
               <div>
                 <label class="block text-sm text-gray-500 mb-2"
                   >Текст отзыва</label
@@ -546,8 +562,6 @@
 Кухня супер, качественно собрано. Доставка пришла в срок. Собирали самостоятельно, все интуитивно просто. Благодарю.</textarea
                 >
               </div>
-
-              <!-- Загрузка фото -->
               <div>
                 <label
                   for="dropzone-file"
@@ -571,33 +585,49 @@
                   />
                 </label>
               </div>
-
-              <!-- Оценка -->
               <div class="flex items-center gap-3">
                 <span class="text-sm text-black">Оценка</span>
                 <div class="flex gap-1">
                   <div class="rating">
-                    <input value="5" name="rate3" id="star3-5" type="radio" />
-                    <label title="text" for="star3-5"></label>
-                    <input value="4" name="rate3" id="star3-4" type="radio" />
-                    <label title="text" for="star3-4"></label>
+                    <input
+                      value="5"
+                      name="rate-modal"
+                      id="star-modal-5"
+                      type="radio"
+                    />
+                    <label title="text" for="star-modal-5"></label>
+                    <input
+                      value="4"
+                      name="rate-modal"
+                      id="star-modal-4"
+                      type="radio"
+                    />
+                    <label title="text" for="star-modal-4"></label>
                     <input
                       value="3"
-                      name="rate3"
-                      id="star3-3"
+                      name="rate-modal"
+                      id="star-modal-3"
                       type="radio"
                       checked
                     />
-                    <label title="text" for="star3-3"></label>
-                    <input value="2" name="rate3" id="star3-2" type="radio" />
-                    <label title="text" for="star3-2"></label>
-                    <input value="1" name="rate3" id="star3-1" type="radio" />
-                    <label title="text" for="star3-1"></label>
+                    <label title="text" for="star-modal-3"></label>
+                    <input
+                      value="2"
+                      name="rate-modal"
+                      id="star-modal-2"
+                      type="radio"
+                    />
+                    <label title="text" for="star-modal-2"></label>
+                    <input
+                      value="1"
+                      name="rate-modal"
+                      id="star-modal-1"
+                      type="radio"
+                    />
+                    <label title="text" for="star-modal-1"></label>
                   </div>
                 </div>
               </div>
-
-              <!-- Кнопка -->
               <div class="flex justify-center pt-2">
                 <button
                   id="submit-review-btn"
@@ -613,18 +643,18 @@
       </div>
     </div>
 
-    <!-- Modal backdrop blur overlay -->
+    <!-- 7 - BOLIM -->
     <div
       id="review-modal-backdrop"
       class="fixed inset-0 z-40 hidden bg-black/40 backdrop-blur-[50px]"
       data-modal-hide="review-modal"
     ></div>
 
-    <!-- 4 - BOLIM -->
+    <!-- 8 - BOLIM  -->
     <section class="bg-[#2b2b2b] py-12">
       <div class="max-w-[1200px] mx-auto w-full px-4">
-        <div class="flex flex-col md:flex-row gap-8">
-          <div class="flex-1">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div>
             <p class="text-white font-bold mb-4">Стиль</p>
             <ul class="space-y-2">
               <li>
@@ -671,7 +701,8 @@
               </li>
             </ul>
           </div>
-          <div class="flex-1">
+
+          <div>
             <p class="text-white font-bold mb-4">Фасад</p>
             <ul class="space-y-2">
               <li>
@@ -714,7 +745,8 @@
               </li>
             </ul>
           </div>
-          <div class="flex-1">
+
+          <div>
             <p class="text-white font-bold mb-4">Форма кухни</p>
             <ul class="space-y-2">
               <li>
@@ -763,7 +795,8 @@
               </li>
             </ul>
           </div>
-          <div class="flex-1">
+
+          <div>
             <p class="text-white font-bold mb-4">Цвет</p>
             <ul class="space-y-2">
               <li>
@@ -771,7 +804,7 @@
                   href="/pages/belye.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-white border border-gray-500 inline-block"
+                    class="w-4 h-4 rounded-full bg-white border border-gray-500 inline-block shrink-0"
                   ></span
                   >Белые</a
                 >
@@ -781,7 +814,7 @@
                   href="/pages/serye.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-gray-400 inline-block"
+                    class="w-4 h-4 rounded-full bg-gray-400 inline-block shrink-0"
                   ></span
                   >Серые</a
                 >
@@ -791,7 +824,7 @@
                   href="/pages/kapuchino.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-[#b5845a] inline-block"
+                    class="w-4 h-4 rounded-full bg-[#b5845a] inline-block shrink-0"
                   ></span
                   >Капучино</a
                 >
@@ -801,7 +834,7 @@
                   href="/pages/bezhevye.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-[#d9c9a8] inline-block"
+                    class="w-4 h-4 rounded-full bg-[#d9c9a8] inline-block shrink-0"
                   ></span
                   >Бежевые</a
                 >
@@ -811,7 +844,7 @@
                   href="/pages/olivkovye.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-[#7a8c6e] inline-block"
+                    class="w-4 h-4 rounded-full bg-[#7a8c6e] inline-block shrink-0"
                   ></span
                   >Оливковые</a
                 >
@@ -821,7 +854,7 @@
                   href="/pages/myatnyj.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-[#7ececa] inline-block"
+                    class="w-4 h-4 rounded-full bg-[#7ececa] inline-block shrink-0"
                   ></span
                   >Мятный</a
                 >
@@ -831,7 +864,7 @@
                   href="/pages/chernye.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-[#555] inline-block"
+                    class="w-4 h-4 rounded-full bg-[#555] inline-block shrink-0"
                   ></span
                   >Черные</a
                 >
@@ -841,14 +874,15 @@
                   href="/pages/korichnevye.html"
                   class="text-gray-300 text-sm flex items-center gap-2"
                   ><span
-                    class="w-4 h-4 rounded-full bg-[#8b4513] inline-block"
+                    class="w-4 h-4 rounded-full bg-[#8b4513] inline-block shrink-0"
                   ></span
                   >Коричневые</a
                 >
               </li>
             </ul>
           </div>
-          <div class="flex-1">
+
+          <div class="col-span-2 sm:col-span-1">
             <p class="text-white font-bold mb-4">Размер</p>
             <ul class="space-y-2">
               <li>
@@ -897,7 +931,7 @@
       </div>
     </section>
 
-    <!-- 5 - BOLIM -->
+    <!-- 9 - BOLIM -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -924,7 +958,6 @@
         currentIdx = (currentIdx + 1) % slides.length;
         showSlide(currentIdx);
       }
-
       function goPrevSlide() {
         currentIdx = (currentIdx - 1 + slides.length) % slides.length;
         showSlide(currentIdx);
@@ -943,8 +976,7 @@
         if (!track) return;
         const imgs = track.querySelectorAll("img");
         if (!slideIndexes[id]) slideIndexes[id] = 0;
-        let idx = slideIndexes[id];
-        idx = (idx - 1 + imgs.length) % imgs.length;
+        let idx = (slideIndexes[id] - 1 + imgs.length) % imgs.length;
         slideIndexes[id] = idx;
         track.style.transform = `translateX(-${idx * 100}%)`;
       };
@@ -954,8 +986,7 @@
         if (!track) return;
         const imgs = track.querySelectorAll("img");
         if (!slideIndexes[id]) slideIndexes[id] = 0;
-        let idx = slideIndexes[id];
-        idx = (idx + 1) % imgs.length;
+        let idx = (slideIndexes[id] + 1) % imgs.length;
         slideIndexes[id] = idx;
         track.style.transform = `translateX(-${idx * 100}%)`;
       };
@@ -964,7 +995,6 @@
         AOS.refresh();
       });
 
-      // Modal logic
       const modal = document.getElementById("review-modal");
       const backdrop = document.getElementById("review-modal-backdrop");
       const submitBtn = document.getElementById("submit-review-btn");
@@ -972,7 +1002,6 @@
       function showModalBackdrop() {
         backdrop.classList.remove("hidden");
       }
-
       function hideModalBackdrop() {
         backdrop.classList.add("hidden");
       }
@@ -987,7 +1016,6 @@
         if (hideBtn) hideBtn.click();
       });
 
-      // Submit review — close modal
       if (submitBtn) {
         submitBtn.addEventListener("click", function () {
           const hideBtn = modal.querySelector("[data-modal-hide]");
